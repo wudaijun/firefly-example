@@ -40,7 +40,7 @@ def start():
         for commandId in (100,200,300):
             print "----------------"
             print "send commandId:",commandId
-            client.sendall(sendData('asdfe',commandId))
+            client.sendall(sendData('msgdata',commandId))
             print resolveRecvdata(client.recv(BUFSIZE))
 
 def run():
