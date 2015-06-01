@@ -1,0 +1,8 @@
+{
+"master":{"rootport":9999,"webport":9998},
+"servers":{
+	"gate":{"name":"gate", "rootport":10000, "app":"app.gateserver"},
+	"net":{"name":"net", "netport":10001, "name":"net", "remoteport":[{"rootport":10000, "rootname":"gate"}], "app":"app.netserver"},
+	"game1":{"name":"game1", "remoteport":[{"rootport":10000, "rootname":"gate"}], "app":"app.game1server"}
+}
+}
